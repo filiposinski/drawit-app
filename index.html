@@ -4,16 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DrawIT</title>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/normalize.css">
 </head>
 
 <body>
-    <main class="main">
-        <h1 class="title">DRAW IT</h1>
-    </main>
+    <header class="header">
+        <h1 class="header__title">DRAW IT</h1>
+        <ul class="header__tools">
+            <li class="tool">
+                <label for="brush-size" class="tool__label">brush size:</label>
+                <input class="tool__input" type="number" name="brush-size" id="brush-size" value="10" step="1">
+            </li>
+            <li class="tool">
+                <label for="brush-color" class="tool__label">brush color:</label>
+                <input class="tool__input" type="color" name="brush-color" id="brush-color" value="#00ff00">
+            </li>
+            <li class="tool">
+                <label for="canvas-color" class="tool__label">canvas color:</label>
+                <input class="tool__input" type="color" name="canvas-color" id="canvas-color" value="#ffffff">
+            </li>
+            <li class="tool">
+                <button class="tool__button tool__button--js" data-clear-btn>CLEAR</button>
+                <button class="tool__button tool__button--js" data-save-btn>SAVE</button>
+            </li>
+
+        </ul>
+    </header>
     <script src="./js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/addons/p5.dom.js"></script>
 </body>
 
 </html>
