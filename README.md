@@ -1,4 +1,4 @@
-#JUST DRAW IT!
+# JUST DRAW IT!
 
 ## WHAT IS IT
 
@@ -14,4 +14,4 @@ The app allows you to save your's painting 🧡
 
 ## HOW TO USE IT
 
-Just simply click [here](https://spacehiker.github.io/drawit-app/) 😉
+Just simply click [**here**](https://spacehiker.github.io/drawit-app/) 😉
