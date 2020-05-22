@@ -19,14 +19,17 @@ let cnv;
 
 function centerCanvas() {
     let x = (windowWidth - width) / 2;
-    let y = (windowHeight - height) / 2;
+    let y = (windowHeight - height + 100) / 2;
     cnv.position(x, y);
 }
 
 function setup() {
     cnv = createCanvas(640, 480);
+    cnv.parent('canvas');
     centerCanvas();
     background(canvasColor.value);
+
+
 }
 
 function windowResized() {
@@ -46,15 +49,19 @@ function draw() {
     paths.forEach((path) => {
         beginShape();
         path.forEach(({ x, y, color, size }) => {
+
             vertex(x, y);
             strokeWeight(size);
             stroke(color);
+
 
         });
         endShape();
 
     });
     noFill();
+
+
 }
 
 function mousePressed() {

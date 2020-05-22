@@ -18,6 +18,10 @@ body {
     margin: 0 auto;
 }
 
+#canvas {
+    width: 100vw;
+}
+
 .header {
     background: rgba(0, 0, 0, 0.2);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -56,6 +60,7 @@ body {
 
 .tool__label {
     padding: 0 5px 0 10px;
+    align-items: center;
 }
 
 .tool__input {
@@ -80,4 +85,51 @@ body {
 .tool__button:hover {
     background: orangered;
     color: white;
+}
+
+input[type=color] {
+    background: none;
+    border: none;
+    width: 30px;
+    box-sizing: border-box;
+    height: 30px;
+    padding: 0;
+    cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+    /*change color of the swatch border here*/
+    border-radius: 30px;
+}
+
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        background: gray;
+    }
+    .header {
+        display: none;
+    }
+    #canvas {
+        display: none;
+    }
+    .mobile {
+        height: 100vh;
+        width: 100vw;
+        font-size: 30px;
+        font-family: roboto;
+        color: white;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
