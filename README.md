@@ -6,6 +6,8 @@ This is a very simple app which **allows you to draw** something!
 
 I made this app to check and play with [**p5.js**](https://p5js.org) library.
 
+For now the app works only on the desktops
+
 
 ## WHAT CAN YOU DO WITH
 
